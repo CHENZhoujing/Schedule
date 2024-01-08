@@ -12,7 +12,7 @@ int main()
     float cpu;             /* Running time in seconds */
     unsigned int n, m;
     Task *tasks;
-    char filename[200];
+    char filename[280];
 
     // Open the directory
     DIR *d;

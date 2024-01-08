@@ -1,7 +1,7 @@
 //
 // Created by 陈周京 on 13/12/2023.
 //
-#include <printf.h>
+#include <stdio.h>
 #include <float.h>
 #include "../include/utils.h"
 
