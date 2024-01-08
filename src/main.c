@@ -17,6 +17,8 @@ int main()
     // Open the directory
     DIR *d;
     struct dirent *dir;
+
+    printf("Starting schedule processing with heap...\n\n");
     d = opendir("./instances");
     if (d)
     {
@@ -48,7 +50,11 @@ int main()
         }
         closedir(d);
     }
+    printf("Finished schedule processing with heap.\n");
+    printf("================================================================================\n\n");
+
     // Repeat the process for schedule function without heap
+    printf("Starting schedule processing without heap...\n\n");
     d = opendir("./instances");
     if (d)
     {
@@ -72,5 +78,6 @@ int main()
         }
         closedir(d);
     }
+    printf("Finished schedule processing without heap.\n");
     return 0;
 }

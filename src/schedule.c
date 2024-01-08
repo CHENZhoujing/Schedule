@@ -36,7 +36,7 @@ float scheduleWithHeap(unsigned int n, unsigned int m, Task *tab) {
     return flowTime;
 }
 
-// Function to scheduleWithHeap tasks (alternative method)
+// Function to scheduleWithoutHeap tasks (alternative method)
 float schedule(unsigned int n, unsigned int m, Task *tab) {
     // Sort tasks
     quickSort(tab, 0, n - 1);
