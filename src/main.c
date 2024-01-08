@@ -46,6 +46,7 @@ int main()
                 printf("CPU time: %.3f s.\n\n", cpu);
             }
         }
+        closedir(d);
     }
     // Repeat the process for schedule function without heap
     d = opendir("./instances");
@@ -69,6 +70,7 @@ int main()
                 printf("CPU time: %.3f s.\n\n", cpu);
             }
         }
+        closedir(d);
     }
     return 0;
 }
