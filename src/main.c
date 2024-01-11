@@ -18,7 +18,10 @@ int main()
     DIR *d;
     struct dirent *dir;
 
-    printf("Starting schedule processing with heap...\n\n");
+    printf("Starting schedule processing with heap...\n");
+    printf("Sorting: O(n log n)\n"
+           "Initializing: O(m)\n"
+           "Scheduling: O(n log m)\n\n");
     d = opendir("./instances");
     if (d)
     {
@@ -54,7 +57,10 @@ int main()
     printf("================================================================================\n\n");
 
     // Repeat the process for schedule function without heap
-    printf("Starting schedule processing without heap...\n\n");
+    printf("Starting schedule processing without heap...\n");
+    printf("Sorting: O(n log n)\n"
+           "Initializing: O(m)\n"
+           "Scheduling: O(nm)\n\n");
     d = opendir("./instances");
     if (d)
     {

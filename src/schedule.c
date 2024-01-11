@@ -11,6 +11,7 @@ float scheduleWithHeap(unsigned int n, unsigned int m, Task *tab) {
     float flowTime = 0.0f;
 
     // Initialize machine end times
+    // O(n log n)
     HeapNode machineEndTime[m];
     int heapSize = 0;
 
@@ -23,6 +24,7 @@ float scheduleWithHeap(unsigned int n, unsigned int m, Task *tab) {
     }
 
     // Schedule tasks
+    // O(n log m)
     for(int i = 0; i < n; i++) {
         HeapNode node = extractMin(machineEndTime, &heapSize);
         unsigned int minAvailableMachine = node.index;
@@ -36,9 +38,10 @@ float scheduleWithHeap(unsigned int n, unsigned int m, Task *tab) {
     return flowTime;
 }
 
-// Function to scheduleWithoutHeap tasks (alternative method)
+// Function to scheduleWithoutHeap tasks
 float schedule(unsigned int n, unsigned int m, Task *tab) {
     // Sort tasks
+    // O(n log n)
     quickSort(tab, 0, n - 1);
     float flowTime = 0.0f;
 
@@ -49,6 +52,7 @@ float schedule(unsigned int n, unsigned int m, Task *tab) {
     }
 
     // Schedule tasks
+    // O(nm)
     for(int i = 0; i < n; i++) {
         unsigned int minAvailableMachine = findMinEndTimeMachine(machineEndTime, m);
         tab[i].machine = minAvailableMachine;
