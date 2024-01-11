@@ -1,0 +1,78 @@
+Starting schedule processing with heap...
+Sorting: O(n log n)
+Initializing: O(m)
+Scheduling: O(n log m)
+
+File name ./instances/instance_010000_5000.dat
+Total Flow Time: 124837112.000000
+CPU time: 0.002 s.
+
+File name ./instances/instance_900000_1000.dat
+Total Flow Time: 243134004985856.000000
+CPU time: 0.184 s.
+
+File name ./instances/instance_000005_0002.dat
+Total Flow Time: 30.500000
+CPU time: 0.001 s.
+
+File name ./instances/instance_900000_5000.dat
+Total Flow Time: 49074380210176.000000
+CPU time: 0.181 s.
+
+File name ./instances/instance_010000_1000.dat
+Total Flow Time: 382102368.000000
+CPU time: 0.003 s.
+
+File name ./instances/instance_100000_1000.dat
+Total Flow Time: 336443736064.000000
+CPU time: 0.019 s.
+
+File name ./instances/instance_100000_5000.dat
+Total Flow Time: 71681728512.000000
+CPU time: 0.019 s.
+
+File name ./instances/instance_001000_0050.dat
+Total Flow Time: 7268356.000000
+CPU time: 0.001 s.
+
+Finished schedule processing with heap.
+================================================================================
+
+Starting schedule processing without heap...
+Sorting: O(n log n)
+Initializing: O(m)
+Scheduling: O(nm)
+
+File name ./instances/instance_010000_5000.dat
+Total Flow Time: 124837112.000000
+CPU time: 0.066 s.
+
+File name ./instances/instance_900000_1000.dat
+Total Flow Time: 243134004985856.000000
+CPU time: 1.270 s.
+
+File name ./instances/instance_000005_0002.dat
+Total Flow Time: 30.500000
+CPU time: 0.000 s.
+
+File name ./instances/instance_900000_5000.dat
+Total Flow Time: 49074380210176.000000
+CPU time: 5.964 s.
+
+File name ./instances/instance_010000_1000.dat
+Total Flow Time: 382102368.000000
+CPU time: 0.013 s.
+
+File name ./instances/instance_100000_1000.dat
+Total Flow Time: 336443736064.000000
+CPU time: 0.142 s.
+
+File name ./instances/instance_100000_5000.dat
+Total Flow Time: 71681728512.000000
+CPU time: 0.658 s.
+
+File name ./instances/instance_001000_0050.dat
+Total Flow Time: 7268356.000000
+CPU time: 0.000 s.
+
+Finished schedule processing without heap.
