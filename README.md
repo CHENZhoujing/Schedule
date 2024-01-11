@@ -1,9 +1,5 @@
 # Schedule Project
 
-## Introduction
-
-This project is designed to implement and compare different scheduling algorithms. It includes methods to process tasks both with and without heap-based scheduling, allowing users to analyze the efficiency and performance of these approaches.
-
 ## Installation
 
 To install and run this project, follow these steps:
@@ -59,4 +55,7 @@ valgrind ./Schedule
 ==14566== For lists of detected and suppressed errors, rerun with: -s  
 ==14566== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)  
 
+## Test Results
+
+The results of running the scheduling algorithms are documented in the `TESTRESULT` file in this repository.
    
