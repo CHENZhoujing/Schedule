@@ -16,7 +16,12 @@ void read(char* filename, unsigned int *n, unsigned int *m, Task **tab) {
         return;
     }
     // Read two unsigned integers from the file
-    fscanf(file, "%u %u\n", n, m);
+    if (fscanf(file, "%u %u\n", n, m) != 2) {
+        // 错误处理代码，例如打印错误消息并退出
+        fprintf(stderr, "Error reading from file.\n");
+        exit(EXIT_FAILURE);
+    }
+
     // Allocate memory for the task array
     *tab = (Task *) malloc(*n * sizeof(Task));
     // Error handling for memory allocation
@@ -30,7 +35,12 @@ void read(char* filename, unsigned int *n, unsigned int *m, Task **tab) {
         // Set task ID
         (*tab)[i].id = i + 1;
         // Read the p value for the task from the file
-        fscanf(file, "%f", &((*tab)[i].p));
+        if (fscanf(file, "%f", &((*tab)[i].p)) != 1) {
+            // 错误处理代码
+            fprintf(stderr, "Error reading float from file at line %d.\n", i);
+            exit(EXIT_FAILURE);
+        }
+
         // Initialize the machine number for the task
         (*tab)[i].machine = 0;
         // Initialize the c value for the task
