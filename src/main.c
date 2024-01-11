@@ -6,7 +6,7 @@
 #include "../include/io.h"
 #include "../include/schedule.h"
 
-int main()
+int main(void)
 {
     struct timeval t0, t1; /* Require time.h */
     float cpu;             /* Running time in seconds */
